@@ -1,16 +1,16 @@
 let score = 33 // type of score is number
 
 // Two ways to check of type of any variable
-//console.log(typeof score);
-//console.log(typeof (score)); // Method
+console.log(typeof score);
+console.log(typeof (score)); // Method
 
 let newscore = "55" // type of new score is string
-//console.log(typeof newscore);
+console.log(typeof newscore);
 
 // To convert the above string into number 
 
 let value = Number(newscore)
-//console.log(typeof value);
+console.log(typeof value);
 /* we converted string to number 
 but there is a catch here if we typed "55abc" 
 which is not a number currently 
@@ -46,6 +46,51 @@ let someNumber = 98
 let string = String(someNumber)
 console.log(string)
 console.log(typeof string);
+
+
+// ***************************** Operations *************************
+
+let posvalue = 39
+let negativevalue = -value
+console.log(negativevalue)
+
+console.log(2+2)
+console.log(2-1);
+console.log(2*2);
+console.log(2**3);
+console.log(2/3);
+console.log(2%3);
+
+
+let str1 = "Hello"
+let str2 = " Rohit"
+let str3 = str1 + str2
+console.log(str3)
+
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+// In this Ist number is String and other 2 are Integer 
+// so the output will come according to Ist number , Output = 122.
+console.log(1 + 2 + "2") // Output = 32.
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
+
+
+
+
+
+
+
+
+
 
 
 
