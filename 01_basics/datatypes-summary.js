@@ -56,3 +56,30 @@ Typeof every Datatype.
        Object  =>  object
 
 */
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Types of memory :- Stack (Primitive) and Heap (Non-Primitive)
+
+let myname = "Rohit"
+
+let anothername = myname
+anothername = "Rana"
+
+console.log(myname)
+console.log(anothername)
+
+let userOne = {
+    email: "rohit@gmail.com",
+    upi: "rohit@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "rana@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
