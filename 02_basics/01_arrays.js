@@ -7,7 +7,7 @@ Same Reference Point:- If we change something in secondary array then
 it will also change in original array. */
 
 const superheros = ["Batman", "Ironman", "Spiderman", "Thor"]
-//console.log(superheros)
+console.log(superheros)
 
 // Another way to declare Array.
 const myArr = new Array(1, 2, 3, 4, 5)
@@ -28,7 +28,26 @@ console.log(myArr.indexOf(3));
 // To know the index of any number.
 
 const newArr = Arr.join()
-// join combine the values in coma seperated form and change the values type into String.
+// join combines the values in coma seperated form and change the values type into String.
 
 console.log(Arr)
 console.log(typeof newArr)
+
+
+// Sclice and Splice
+
+console.log("A", Arr);
+
+const myn1 = Arr.slice(1, 3)
+// In Slice it don't manipulate the original array and not include last range value.
+//Output:- [1,2] and original array:- [0,1,2,3,4,5]
+
+console.log(myn1)
+console.log("B", Arr)
+
+const myn2 = Arr.splice(1, 3)
+// In splice it manipulate the original array and also include last range value.
+// Outuput:- [1,2,3] and original array:- [0,4,5]
+console.log("C", Arr)
+console.log(myn2)
+
