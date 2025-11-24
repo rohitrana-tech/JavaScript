@@ -50,4 +50,28 @@ tinderUser.isLoggedIn = false
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+// course.courseInstructor
+
+// De structuring of an object
+
+const {courseInstructor: instructor} = course
+console.log(courseInstructor);
+console.log(instructor);
+
+// JSON basic syntax
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+
+
  
