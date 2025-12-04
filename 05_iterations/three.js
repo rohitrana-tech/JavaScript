@@ -1,4 +1,4 @@
-// for of
+// For of Loop file
 
 // ["", "", ""]
 // [{}, {}, {}]
@@ -9,8 +9,13 @@ for (const num of arr) {
     //console.log(num);
 }
 
+
 const greetings = "Hello world!"
 for (const greet of greetings) {
+    if(greet == " "){
+        //console.log("Space detected ");
+        continue
+    }
     //console.log(`Each char is ${greet}`)
 }
 
@@ -23,16 +28,18 @@ map.set('Fr', "France")
 map.set('IN', "India")
 
 
-// console.log(map);
+ console.log(map);
 
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
 }
 
 const myObject = {
-    game1: 'NFS',
-    game2: 'Spiderman'
+    game1: 'BGMI',
+    game2: 'Free Fire'
 }
+
+// Here Forof syntax is not iteratable on the object. Forof loop not works on object.
 
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
