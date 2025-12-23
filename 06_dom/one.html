@@ -4,13 +4,106 @@
     <meta charset="UTF-8">
   
     <title>DOM learning</title>
+    <style> 
+        .bg-black{
+            background-color: black;
+            color: white;
+            
+        }
+    </style>
 </head>
-<body>
-    <div class = "bg-black" >
-        <h1  id="title" class="heading"> DOM learning on Chai aur code </h1> 
+<body class = "bg-black">
+    <div  >
+        <h1  id="title" class="heading"> DOM learning on Chai aur code <span style = "display: none;"> test text</span> </h1> 
+
+        <h2 id="firstHeading"> This is first heading </h2>
+        <h2> This is second heading </h2>
+        <h2> This is third heading </h2>
         <p>DOM refers to Document Object Model </p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+            <li class = "list-item">four</li>
+        </ul>
 
     </div>
     
 </body>
 </html>
+
+
+
+/* 
+Below code represents What i have learned about DOM through browser console. 
+So i have written it in comments. Step by step things done in browser console to learn DOM.
+
+console.log(window.document);
+console.dir(document);          provide detailed view of document object.
+console.log(document);          represent the whole html document.
+console.log(document.all);      array-like object.
+
+
+ 1. document : It represents the whole html document.
+ 2. document.all : It gives all the elements present in the html document as an array-like object.
+
+ console.log(document.baseURI);   provide the url of the document.
+ console.log(document.links);      provide all the links present in the document.
+ console.log(document.links[9]);   provide the 10th link in the document. or any index.
+
+ document.getElementById('id_name');    to access element by id.
+ document.getElementById('id_name').innerHTML;   to access the inner html of that element.
+ document.getElementById('firstHeading').innerHTML = " <h1> Rohit Rana </h1> "   to change the inner html of that element.
+
+ document.getElementById('title').className;     to access the class name of that element.
+ document.getElementById('title').id;            to access the id of that element.
+
+ document.getElementById('title').getAttribute('id');   to get the attribute of that element.
+ document.getElementById('title').getAttribute('class');   to get the attribute of that element.
+
+ title.textContent;    to get the text content of that element or shows the hidden text content as well .
+ title.innerText;      to get the inner text of that element or only shows the visible text of the element.
+ title.innerHTML;      to get the inner html of that element or provide everthing written in the html (such as style, background-color etc) .
+
+
+ querySelector : It is used to access the first element of the specified type.
+
+ document.querySelector('h1');   to access the first h1 element.
+ document.querySelector('h2');   to access the first h2 element.
+ document.querySelector('#title');   to access the element with id 'title'.
+ document.querySelector('.heading');   to access the element with class 'heading'.
+
+
+ document.querySelector('input[type = "password"]');   to access the input element with type password.
+
+
+ document.querySelector('ul');   to access the ul element.
+ const myul = document.querySelector('ul');
+ myul.children;    to access all the children of that ul element.
+ const turnGreen = myul.querySelector('li');   to access the first li element inside that ul.
+ turnGreen.style.color = "green";    to change the color of that first li element to green.
+
+ 
+ querySelectorAll : It is used to access all the elements of the specified type and returns a nodelist of all the elements.
+
+ document.querySelectorAll('li');
+ const tempList = document.querySelectorAll('li');
+ tempList[0].style.color = "blue";    to change the color of first li element to blue.
+
+ const myH1 = document.querySelectorAll('h1');
+ myH1[0].style.color = "red";    to change the color of h1 element to red.
+
+
+ document.getElementsByClassName('list-item');   to access all the elements with class name 'list-item'.
+ const tempClassList = document.getElementsByClassName('list-item');
+
+ Converting the HTMLCollection to Array to use forEach loop.
+ Array.from(tempClassList).forEach( (item) => {
+    console.log(item);
+    item.style.fontWeight = "bold";    to change the font weight of all the elements with class name 'list-item' to bold.
+ } )
+
+
+ */
