@@ -2,7 +2,7 @@
 
 # Solution code
 
-# Project 1
+# Project 1 (Color Changer)
 
 ```javascript
 console.log("Rohit Rana")
@@ -43,7 +43,7 @@ buttons.forEach(function (button) {
 ```
 
 
-# Project 2
+# Project 2 (BMI Calculator)
 
 
 ``` JavaScript 
@@ -80,5 +80,19 @@ form.addEventListener('submit', function (e) {
     results.innerHTML = `Your BMI is <span>${bmi}</span> , You are in ${category} category `;
   }
 });
+
+```
+
+
+# Project 3 (Digital Clock)
+
+
+```JavaScript
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 
 ```
