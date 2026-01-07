@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Stop Interval</title>
+</head>
+<body>
+    <h1>Chai or Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayDate = function () {
+        console.log("Rohit", Date.now());
+    };
+
+    let intervalId = null; // stores interval reference
+
+    document.querySelector('#start').addEventListener('click', function () {
+        if (intervalId === null) {       // prevent multiple intervals
+            intervalId = setInterval(sayDate, 10000);
+            console.log("Started");
+        }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        if (intervalId !== null) {
+            clearInterval(intervalId);
+            intervalId = null;
+            console.log("Stopped");
+        }
+    });
+</script>
+</html>
