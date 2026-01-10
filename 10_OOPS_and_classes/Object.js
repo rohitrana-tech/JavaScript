@@ -26,7 +26,7 @@ const chai = new createUser("chai", 25)
 const tea = createUser("tea", 250)
 
 
-chai.printMe();
+chai.printMe(); 
 
 
 
